@@ -1,0 +1,68 @@
+/* Styling Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: #343a40; /* Warna abu-abu gelap */
+    padding: 20px;
+    color: white;
+    transition: all 0.3s;
+    overflow-y: auto; /* Jika menu banyak, bisa scroll */
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar .nav-link {
+    display: block;
+    font-size: 16px;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background: #007bff; /* Efek hover biru */
+}
+
+.sidebar .nav-item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk sub-menu */
+.sidebar .nav-item .submenu {
+    padding-left: 20px;
+    display: none;
+}
+
+.sidebar .nav-item.active .submenu {
+    display: block;
+}
+
+/* Untuk tampilan sidebar ketika di-collapse */
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .nav-link span {
+    display: none;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.collapsed + .content {
+    margin-left: 80px;
+}

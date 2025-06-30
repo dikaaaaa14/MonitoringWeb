@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.bg-blue-800 {
+    background-color: #1e40af;
+}
+
+.bg-blue-700 {
+    background-color: #1d4ed8;
+}
+
+.border-blue-700 {
+    border-color: #1d4ed8;
+}
+
+.text-blue-200 {
+    color: #bfdbfe;
+}
+
+/* Chart container */
+.chart-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
